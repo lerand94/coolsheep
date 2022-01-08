@@ -88,9 +88,9 @@ const FAQ = () => {
                 <p>
                   The sale will take place in two stages - pre-sale and public
                   sale. Pre-sale will begin on February 15th, with a public sale
-                  on February 17th. Only users who will be whitelisted will be
-                  allowed to presale. And, of course, the price is 0,05 ETH per
-                  cutie
+                  on February 17th. Only who will be whitelisted will be allowed
+                  to presale. And, of course, the price is 0,05 ETH per cutie on
+                  public sale and 0.04 on pre-sale
                 </p>
               </AccordionItemPanel>
             </AccordionItem>
@@ -102,12 +102,15 @@ const FAQ = () => {
               </AccordionItemHeading>
               <AccordionItemPanel>
                 <p>
-                  Quite simple actually! The first 300 users who have joined the
-                  discord server will be added to the whitelist - early support.
-                  Other users can win a place on the white list by participating
-                  in contests, giveaways, or actively participating in the
-                  social life of the project! Everyone's support is very
-                  important to us!
+                  Quite simple actually! There are 4 main ways to get
+                  whitelisted 1) Win WL spot in our activities and giveaways 2)
+                  Invite 5 people (you should use your own invite link - you can
+                  check the amount in the invitations channel in our Discord) 3)
+                  Make 2 tweets about Cool Sheep on Twitter (posts or
+                  informative comment about our project) 4) Be active in our
+                  friendly community and get level 5 - you can check the level
+                  in the levels channel in our Discord too. Everyone's support
+                  is very important to us!
                 </p>
               </AccordionItemPanel>
             </AccordionItem>
