@@ -1,0 +1,110 @@
+.roadmap {
+  padding-top: 150px;
+  /* padding-bottom: 150px; */
+}
+.roadmapBox {
+  background: #ffffff;
+  box-shadow: 0px 51px 100px rgba(50, 46, 41, 0.04);
+  border-radius: 108px;
+  padding: 100px;
+}
+.roadmapBox h2 {
+  margin-bottom: 70px;
+  color: #e2ace4;
+}
+.roadStep {
+  display: flex;
+  align-items: center;
+}
+
+.roadmapBox > ul > li {
+  margin-bottom: 15px;
+}
+.roadmapBox > ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.colorBox {
+  width: 50px;
+  min-height: 100px;
+  background: turquoise;
+  flex: none;
+}
+.colorBoxFirst {
+  border-radius: 49px 49px 0px 0px;
+  /* background: #ffbe87; */
+  background: linear-gradient(180deg, #ffbe87 25%, #defc7f 100%);
+}
+.colorBox2 {
+  background: linear-gradient(180deg, #defc7f 25%, #64fda9 100%);
+}
+.colorBox3 {
+  background: linear-gradient(180deg, #64fda9 25%, #b6fd91 100%);
+}
+.colorBox4 {
+  background: linear-gradient(180deg, #b6fd91 25%, #71e8fd 100%);
+}
+.colorBox5 {
+  background: linear-gradient(180deg, #71e8fd 25%, #8ba8ff 100%);
+}
+.colorBox6 {
+  background: linear-gradient(180deg, #8ba8ff 25%, #a48dd1 100%);
+}
+.colorBox7 {
+  background: linear-gradient(180deg, #a48dd1 25%, #d68ad0 100%);
+}
+.colorBoxLast {
+  border-radius: 0px 0px 49px 49px;
+  background: linear-gradient(180deg, #d68ad0 25%, #d8898b 100%);
+}
+.next {
+  margin: 0 20px;
+  background-image: url(../assets/next.svg);
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: none;
+}
+.num {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  margin-right: 20px;
+  line-height: 100%;
+}
+.text {
+  margin-left: auto;
+}
+
+@media (max-width: 991px) {
+  .text {
+    margin-left: initial;
+  }
+  .roadmapBox {
+    border-radius: 40px;
+    padding: 50px;
+  }
+  .roadmap {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .colorBox {
+    width: 30px;
+  }
+  .roadmapBox {
+    border-radius: 40px;
+    padding: 20px;
+  }
+  .num {
+    font-size: 30px;
+  }
+  .roadStep {
+    align-items: initial;
+  }
+  .roadmap {
+    padding-top: 30px;
+  }
+}

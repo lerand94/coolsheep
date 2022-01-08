@@ -1,0 +1,219 @@
+@font-face {
+  font-family: "Sponge";
+  src: local("Sponge"), url(./assets/SpongeFont.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Pop";
+  src: local("Pop"), url(./assets/Poppins.ttf) format("truetype");
+}
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  font-size: 18px;
+  line-height: 140%;
+  font-family: "Pop";
+  color: #333333;
+}
+
+/* font-family: "Gilroy"; */
+
+/* @font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url(./assets/fonts/Montserrat/Montserrat-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Martian";
+  src: local("Martian"),
+    url(./assets/fonts/martian_wars/Martian\ Wars.ttf) format("truetype");
+} */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  outline: none;
+  background: 0;
+  border: 0;
+  transition: 0.3s;
+}
+h1,
+h2 {
+  font-family: "Sponge";
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  margin: 0;
+}
+
+main {
+  background: #fbf9f6;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.accordion {
+  max-width: 790px;
+  width: 100%;
+  font-family: "Pop";
+}
+
+.accordion__item {
+  margin-bottom: 30px;
+}
+
+.accordion__item + .accordion__item {
+  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
+}
+
+.accordion__button {
+  font-family: "Pop";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  color: #333;
+  cursor: pointer;
+  padding: 20px 30px;
+  /* width: 100%; */
+  text-align: left;
+  transition: 0.3s;
+  background: #faf8f5;
+  position: relative;
+  border-radius: 15px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+}
+.accordion__button > p {
+  width: calc(100% - 100px);
+  margin: 0;
+}
+
+.accordion__button:hover {
+  /* background-color: #ddd; */
+}
+
+.accordion__button:before {
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  content: "";
+  height: 60px;
+  width: 60px;
+  background: rgba(255, 255, 255, 0.25);
+  /* border-bottom: 4px solid currentColor;
+  border-right: 4px solid currentColor; */
+  /* transform: rotate(45deg); */
+  font-size: 48px;
+  line-height: 58px;
+}
+.accordion__button:after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  transition: 0.3s;
+  border-radius: 50%;
+  background-image: url("../src/assets/cross.svg");
+  background-size: 30px 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.accordion__button[aria-expanded="true"]::after,
+.accordion__button[aria-selected="true"]::after {
+  background-color: #dc8a8f;
+  background-image: url("../src/assets/minus.svg");
+  /* top: 58px; */
+}
+.accordion__button[aria-expanded="true"],
+.accordion__button[aria-selected="true"] {
+  color: #dc8a8f;
+  margin-bottom: 3px;
+  border-radius: 15px 15px 0 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+.accordion__panel {
+  border-radius: 0 0 15px 15px;
+  padding: 30px;
+  font-family: "Pop";
+  color: #333;
+  font-weight: normal;
+  font-size: 18px;
+  background: #faf8f5;
+  line-height: 140%;
+  animation: fadein 0.35s ease-in;
+  margin: 0;
+}
+/* -------------------------------------------------- */
+/* ---------------- Animation part ------------------ */
+/* -------------------------------------------------- */
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .accordion {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .accordion__button > p {
+    width: calc(100% - 50px);
+    margin: 0;
+  }
+  .accordion__button {
+    font-size: 14px;
+  }
+  .accordion__panel {
+    font-size: 14px;
+  }
+  .accordion__button:after {
+    width: 30px;
+    height: 30px;
+    top: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 15px;
+  }
+  .accordion {
+    width: 100%;
+  }
+}

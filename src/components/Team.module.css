@@ -1,0 +1,128 @@
+.team {
+  padding-bottom: 70px;
+  background: #f5f5f5;
+}
+.team h2 {
+  padding-top: 150px;
+  margin-bottom: 78px;
+  color: #b4dff2;
+  line-height: 100%;
+}
+
+.teamList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.itemBox {
+  display: flex;
+  flex-direction: column;
+}
+.itemBox > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamListItem {
+  background: #ffffff;
+  box-shadow: 0px 28px 95px rgb(50 46 41 / 5%);
+  border-radius: 33px;
+  padding: 20px 20px 20px 20px;
+  flex-basis: 25%;
+  margin-bottom: 22px;
+  box-sizing: border-box;
+  display: flex;
+  /* flex-direction: column; */
+}
+.info > p {
+  text-align: center;
+}
+.info > p:last-child {
+  margin-bottom: 50px;
+}
+.teamListItem > p {
+  margin: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.itemBox > img {
+  max-width: 300px;
+  border-radius: 30px;
+}
+.teamList > li:last-child {
+  margin-right: 0;
+}
+.teamListItem > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.name {
+  font-family: "Sponge";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  color: #e2ace4;
+  margin-right: 20px;
+}
+.position {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: #70b1f6;
+}
+
+@media (max-width: 1200px) {
+  .team {
+    padding-bottom: 50px;
+  }
+  .team h2 {
+    padding-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .teamList {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .teamListItem {
+    margin-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .teamListItem {
+    flex-direction: column;
+  }
+  .teamListItem > p {
+    flex-direction: column-reverse;
+    margin-top: 30px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 13px;
+  }
+}
+@media (max-width: 576px) {
+  .teamListItem > div {
+    flex-direction: column;
+  }
+  .team {
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .itemBox > img {
+    max-width: 100%;
+  }
+}

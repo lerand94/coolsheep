@@ -1,0 +1,20 @@
+.grid {
+  border: solid 2px #000;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  position: relative;
+}
+.ico {
+  background-image: url("../assets/dev4.png");
+  background-size: cover;
+  transition: 0.3s;
+  height: fit-content;
+}
+.ico-active {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+}

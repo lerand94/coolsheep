@@ -1,0 +1,174 @@
+.wall {
+  background: #000 url("../assets/wall.png") repeat center center;
+  background-attachment: fixed;
+  padding-top: 500px;
+  text-align: center;
+  -webkit-animation: wall_scrollx 120s linear 0s infinite forwards,
+    wall_scrolly 120s linear 0s infinite forwards;
+  animation: wall_scrollx 120s linear 0s infinite forwards,
+    wall_scrolly 120s linear 0s infinite forwards;
+  position: relative;
+}
+
+.preview {
+  /* background-image: linear-gradient(180deg, #eeeeee 0%, #d8d8d8 100%);
+  box-shadow: 0 10px 24px #0000004d, inset 0 1px #fff; */
+  border-radius: 4px;
+  transform: rotate(6deg);
+  /* padding: 20px; */
+  position: absolute;
+  top: -45px;
+  left: 10%;
+  z-index: 3;
+  /* background-image: url("../assets/frame.png"); */
+}
+.preview::before {
+  background-image: url("../assets/frame.png");
+  background-size: contain;
+  content: "";
+  width: 120%;
+  height: 120%;
+  z-index: 10000;
+  position: absolute;
+  left: -37px;
+  top: -37px;
+}
+.card {
+  position: relative;
+  width: 558px;
+  height: 558px;
+  overflow: hidden;
+  border-radius: 2px;
+}
+.card:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 900;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #8c167333;
+}
+.cardPart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  background-image: url("../assets/unknow.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform: translate(558px);
+  -webkit-animation: opaqTransition 12s cubic-bezier(0, 0, 0, 0.97) infinite;
+  animation: opaqTransition 12s cubic-bezier(0, 0, 0, 0.97) infinite;
+}
+.cardPartOne {
+}
+.cardPartTwo {
+  z-index: 6;
+  background-image: url("../assets/unknow.png");
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+.cardPartThree {
+  z-index: 5;
+  background-image: url("../assets/unknow.png");
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+}
+.cardPartFour {
+  z-index: 4;
+  background-image: url("../assets/unknow.png");
+  -webkit-animation-delay: 9s;
+  animation-delay: 9s;
+}
+
+@-webkit-keyframes opaqTransition {
+  3% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(0);
+  }
+  28% {
+    transform: translate(-558px);
+  }
+  to {
+    transform: translate(-558px);
+  }
+}
+@keyframes opaqTransition {
+  3% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(0);
+  }
+  28% {
+    transform: translate(-558px);
+  }
+  to {
+    transform: translate(-558px);
+  }
+}
+
+@-webkit-keyframes wall_scrollx {
+  0% {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -20000px;
+  }
+}
+@keyframes wall_scrollx {
+  0% {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -20000px;
+  }
+}
+@-webkit-keyframes wall_scrolly {
+  0% {
+    background-position-y: 0;
+  }
+  to {
+    background-position-y: 10000px;
+  }
+}
+@keyframes wall_scrolly {
+  0% {
+    background-position-y: 0;
+  }
+  to {
+    background-position-y: 10000px;
+  }
+}
+
+@media (max-width: 991px) {
+  .card {
+    width: 350px;
+    height: 350px;
+  }
+  .wall {
+    padding-top: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 200px;
+    height: 200px;
+  }
+  .wall {
+    padding-top: 180px;
+  }
+  .preview::before {
+    left: -14px;
+    top: -14px;
+  }
+}

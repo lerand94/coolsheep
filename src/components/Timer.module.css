@@ -1,0 +1,141 @@
+.timer {
+  /* color: #d05e39;
+    font-family: "Stamp";
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+    margin-bottom: 72px;
+    width: 25rem;
+    text-align: center; */
+  max-width: 525px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 28px 95px rgba(50, 46, 41, 0.05);
+  border-radius: 33px;
+  padding: 30px 40px;
+}
+.timer h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  text-align: center;
+}
+.timer > ul {
+  display: flex;
+  justify-content: space-between;
+}
+.day {
+  background: #ffffff;
+  border-radius: 15px;
+  width: 100%;
+  padding: 46px 0 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.other {
+  background: #ffffff;
+  border-radius: 15px;
+  width: 100%;
+  padding: 26px 0 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.otherNum {
+  font-family: "Martian";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 75px;
+  text-shadow: 0px 4px 24px rgba(76, 25, 186, 0.15);
+  background: linear-gradient(180deg, #d923ff 0%, #9b37ff 48.44%, #6748ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.otherText {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  font-family: "MontserratBold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 45px;
+}
+
+.timer > ul > li {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 84px;
+}
+.timer > ul > li::before {
+  content: "";
+  height: 100%;
+  width: 5px;
+  position: absolute;
+  right: -30px;
+  top: 0;
+  background: #f2f2f2;
+}
+.timer > ul > li:last-child::before {
+  display: none;
+}
+.dayNum {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 57px;
+  text-align: center;
+  color: #333333;
+  font-family: "Sponge";
+}
+.dayText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #333333;
+}
+.sep {
+  position: relative;
+}
+.sep::before {
+  content: "";
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #f2f2f2;
+}
+.sep::after {
+  content: "";
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  background: #f2f2f2;
+}
+
+@media (max-width: 1200px) {
+  .timer {
+    max-width: 300px;
+  }
+  .timer > ul > li::before {
+    right: -2px;
+  }
+}
+
+@media (max-width: 576px) {
+  .otherNum {
+    font-size: 60px;
+  }
+  .timer {
+    padding: 30px 10px;
+  }
+}

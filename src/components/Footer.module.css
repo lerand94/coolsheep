@@ -1,0 +1,22 @@
+.footer {
+  padding-bottom: 100px;
+  padding-top: 73px;
+}
+.footer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 816px;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer > div > p {
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
