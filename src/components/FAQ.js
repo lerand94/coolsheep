@@ -126,7 +126,48 @@ const FAQ = () => {
             <AccordionItem>
               <AccordionItemHeading>
                 <AccordionItemButton>
-                  <p>6) And another question- Treasure field - more details?</p>
+                  <p>
+                    6) Such a question - if I am the holder of Сool Сats or
+                    Aliens Frens?
+                  </p>
+                </AccordionItemButton>
+              </AccordionItemHeading>
+              <AccordionItemPanel>
+                <p>
+                  In this case, great benefits await you! The fact is that our
+                  collection is a product of inspiration from Cool Cats and
+                  Alien Frens, and giving them their due, each holder of these
+                  two collections has the opportunity to receive our sheep for
+                  free - using the claim mechanism, which will become available
+                  from February 15 - on the day of the start of presales
+                </p>
+              </AccordionItemPanel>
+            </AccordionItem>
+
+            <AccordionItem>
+              <AccordionItemHeading>
+                <AccordionItemButton>
+                  <p>7) About investments. Should I buy a Cool Sheep?</p>
+                </AccordionItemButton>
+              </AccordionItemHeading>
+              <AccordionItemPanel>
+                <p>
+                  This is a good and difficult question. To buy or not, to be a
+                  holder or to sell - these are questions to which we cannot
+                  give a definite answer. Buying each card is an investment in
+                  the project - in its further growth and development. We have a
+                  plan for further development, the key point of which is the
+                  Treasure Field and the DAO, which will allow holders to
+                  dispose of them through the use of the DAO wallet. We have
+                  "Napoleonic plans" - and we ask you to believe in them!
+                </p>
+              </AccordionItemPanel>
+            </AccordionItem>
+
+            <AccordionItem>
+              <AccordionItemHeading>
+                <AccordionItemButton>
+                  <p>8) And another question- Treasure field - more details?</p>
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
@@ -149,7 +190,7 @@ const FAQ = () => {
             <AccordionItem>
               <AccordionItemHeading>
                 <AccordionItemButton>
-                  <p>7) What does DAO stand for?</p>
+                  <p>9) What does DAO stand for?</p>
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
