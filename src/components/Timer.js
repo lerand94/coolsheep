@@ -35,8 +35,9 @@ const Timer = () => {
   }, [timeLeft]);
 
   return (
-    <div className={classes.timer}>
-      {/* <div className={classes.day}>
+    <>
+      <div className={classes.timer}>
+        {/* <div className={classes.day}>
         <span className={classes.dayNum}>{timeLeft.days}</span>{" "}
         <span className={classes.dayText}>Days</span>
       </div>
@@ -50,26 +51,29 @@ const Timer = () => {
           <span>Seconds</span>
         </div>
       </div> */}
-      <h3>The presale will be available in</h3>
-      <ul>
-        <li>
-          <span className={classes.dayNum}>{timeLeft.days}</span>
-          <span className={classes.dayText}>Days</span>
-        </li>
-        <li>
-          <span className={classes.dayNum}>{timeLeft.hours}</span>
-          <span className={classes.dayText}>Hours</span>
-        </li>
-        <li>
-          <span className={classes.dayNum}>{timeLeft.minutes}</span>
-          <span className={classes.dayText}>Mins</span>
-        </li>
-        <li>
-          <span className={classes.dayNum}>{timeLeft.seconds}</span>
-          <span className={classes.dayText}>Secs</span>
-        </li>
-      </ul>
-    </div>
+        <h3>The presale will be available in</h3>
+        <ul>
+          <li>
+            <span className={classes.dayNum}>{timeLeft.days}</span>
+            <span className={classes.dayText}>Days</span>
+          </li>
+          <li>
+            <span className={classes.dayNum}>{timeLeft.hours}</span>
+            <span className={classes.dayText}>Hours</span>
+          </li>
+          <li>
+            <span className={classes.dayNum}>{timeLeft.minutes}</span>
+            <span className={classes.dayText}>Mins</span>
+          </li>
+          <li>
+            <span className={classes.dayNum}>{timeLeft.seconds}</span>
+            <span className={classes.dayText}>Secs</span>
+          </li>
+        </ul>
+      </div>
+      <p>Main sale: 17th February</p>
+      <p>Price: 0.02 ETH</p>
+    </>
   );
 };
 

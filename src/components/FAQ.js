@@ -89,8 +89,8 @@ const FAQ = () => {
                   The sale will take place in two stages - pre-sale and public
                   sale. Pre-sale will begin on February 15th, with a public sale
                   on February 17th. Only who will be whitelisted will be allowed
-                  to presale. And, of course, the price is 0,05 ETH per cutie on
-                  public sale and 0.04 on pre-sale
+                  to presale. And, of course, the price is 0,02 ETH per Cool
+                  Sheep
                 </p>
               </AccordionItemPanel>
             </AccordionItem>
@@ -101,17 +101,25 @@ const FAQ = () => {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
-                <p>
+                <ul>
                   Quite simple actually! There are 4 main ways to get
-                  whitelisted 1) Win WL spot in our activities and giveaways 2)
-                  Invite 5 people (you should use your own invite link - you can
-                  check the amount in the invitations channel in our Discord) 3)
-                  Make 2 tweets about Cool Sheep on Twitter (posts or
-                  informative comment about our project) 4) Be active in our
-                  friendly community and get level 5 - you can check the level
-                  in the levels channel in our Discord too. Everyone's support
-                  is very important to us!
-                </p>
+                  whitelisted{" "}
+                  <li>1) Win WL spot in our activities and giveaways</li>{" "}
+                  <li>
+                    2) Invite 5 people (you should use your own invite link -
+                    you can check the amount in the invitations channel in our
+                    Discord)
+                  </li>{" "}
+                  <li>
+                    3) Make 2 tweets about Cool Sheep on Twitter (posts or
+                    informative comment about our project)
+                  </li>{" "}
+                  <li>
+                    4) Be active in our friendly community and get level 5 - you
+                    can check the level in the levels channel in our Discord
+                    too. Everyone's support is very important to us!
+                  </li>
+                </ul>
               </AccordionItemPanel>
             </AccordionItem>
 

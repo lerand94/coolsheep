@@ -20,6 +20,10 @@ const Mint = () => {
             <span>10000</span>
             <span>Unique Cool Sheep</span>
           </h1>
+          <p>
+            FREE mint for <span className={classes.accent}>Cool Cats</span> and
+            <span className={classes.accent}> Alien frens</span>
+          </p>
           {/* <p className={classes.desc}>Choose a quantity to mint</p>
           <div className={classes.sliderBox}>
             <input
@@ -61,6 +65,13 @@ const Mint = () => {
               <span>Minted:</span>
               <span>0 / 10000</span>
             </div>
+            <button
+              className={classes.mintButton}
+              // onClick={claim}
+              // disabled={!isSaleAcitve || isMintPending}
+            >
+              Claim
+            </button>
           </div> */}
           <p className={classes.soon}>Coming Soon</p>
         </div>

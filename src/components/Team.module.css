@@ -26,6 +26,11 @@
   justify-content: center;
   align-items: center;
 }
+.accent {
+  color: #b4dff2;
+  font-size: 24px;
+  font-weight: bold;
+}
 
 .teamListItem {
   background: #ffffff;

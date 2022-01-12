@@ -58,6 +58,7 @@
   z-index: 7;
   background-image: url("../assets/unknow.png");
   background-size: cover;
+  background-position: 13px;
   display: flex;
   align-items: center;
   width: 100%;
@@ -157,6 +158,9 @@
   .wall {
     padding-top: 300px;
   }
+  .cardPart {
+    background-position: -5px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -170,5 +174,8 @@
   .preview::before {
     left: -14px;
     top: -14px;
+  }
+  .cardPart {
+    background-position: 4px;
   }
 }

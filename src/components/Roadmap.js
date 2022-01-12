@@ -45,7 +45,7 @@ const Roadmap = () => {
               <div className={classes.next}></div>
               <span className={classes.num}>50%</span>
               <span className={classes.text}>
-                Transfer 25 ETH to Treasure Field wallet
+                Transfer 10 ETH to Treasure Field wallet
               </span>
             </li>
             <li className={classes.roadStep}>
@@ -54,9 +54,7 @@ const Roadmap = () => {
               ></div>
               <div className={classes.next}></div>
               <span className={classes.num}>60%</span>
-              <span className={classes.text}>
-                Launch Online Charity Merch shop
-              </span>
+              <span className={classes.text}>Launch Charity Merch shop</span>
             </li>
             <li className={classes.roadStep}>
               <div
@@ -65,7 +63,7 @@ const Roadmap = () => {
               <div className={classes.next}></div>
               <span className={classes.num}>75%</span>
               <span className={classes.text}>
-                Transfer 25 ETH to DAO wallet for purchase Blue Chip.
+                Transfer 20 ETH to DAO wallet for purchase Blue Chip.
               </span>
             </li>
             <li className={classes.roadStep}>
@@ -85,8 +83,10 @@ const Roadmap = () => {
               <div className={classes.next}></div>
               <span className={classes.num}>100%</span>
               <span className={classes.text}>
-                Transfer 50 ETH to Treasure Field wallet and 50 ETH to DAO
-                wallet
+                After sell-out we'll launch our new unique collection exclusive
+                for our holders.
+                <br />
+                All NFTs will be FREE mint for our holders!
               </span>
             </li>
           </ul>

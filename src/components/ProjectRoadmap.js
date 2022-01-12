@@ -55,9 +55,10 @@ const ProjectRoadmap = () => {
                 покупку редких нфт то ли на любые пожелание которое решит
                 сообщество. У ДАО будут выбраны лидеры сообщества для Мультисиг
                 контроля , девы отдадут все права на этот кошелек.  */}
-                We want to create a cozy and pleasant community of active
+                We want to create a friendly and pleasant community of active
                 participants for the grow up of the project and its development
-                in the future. The DAO wallet will be accumulate royalties from
+                in the future.
+                <br /> The DAO wallet will be accumulate royalties from
                 secondary sales which are then used to purchase Blue Chip NFTs
                 in the fractionalized vault and DAO-led initiatives.
               </p>
@@ -75,9 +76,10 @@ const ProjectRoadmap = () => {
                 структуры иерархии в ДАО , а также для будешей токеномики в
                 проекте (бридинг ?) */}
                 We are going to launch token $WOOL for fractional shares of the
-                DAO community’s vault. We purpose $WOOL as a reward in different
-                contests in discord. $WOOL will be able to trade on SushiSwap.
-                To get $WOOL you need to stake it. 5 $WOOL per day.
+                DAO community’s vault.
+                <br /> We purpose $WOOL as a reward in different contests in
+                discord. $WOOL will be able to trade on SushiSwap. To get $WOOL
+                you need to stake it. 1 $WOOL per day. 1 Sheep = 1 WOOL
                 <br /> And with help of community votes, we'll decide how we can
                 use it. Maybe for breeding?
               </p>
