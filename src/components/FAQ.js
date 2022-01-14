@@ -135,11 +135,12 @@ const FAQ = () => {
               <AccordionItemPanel>
                 <p>
                   In this case, great benefits await you! The fact is that our
-                  collection is a product of inspiration from Cool Cats and
-                  Alien Frens, and giving them their due, each holder of these
-                  two collections has the opportunity to receive our sheep for
-                  free - using the claim mechanism, which will become available
-                  from February 15 - on the day of the start of presales
+                  collection is a product of inspiration from Cool Cats,Cool
+                  Dogs and Alien Frens, and giving them their due, each holder
+                  of these two collections has the opportunity to receive our
+                  sheep for free - using the claim mechanism, which will become
+                  available from February 15 - on the day of the start of
+                  presales
                 </p>
               </AccordionItemPanel>
             </AccordionItem>

@@ -21,7 +21,8 @@ const Mint = () => {
             <span>Unique Cool Sheep</span>
           </h1>
           <p>
-            FREE mint for <span className={classes.accent}>Cool Cats</span> and
+            FREE mint for <span className={classes.accent}>Cool Cats</span>,{" "}
+            <span className={classes.accent}>Cool Dogs</span> and
             <span className={classes.accent}> Alien frens</span>
           </p>
           {/* <p className={classes.desc}>Choose a quantity to mint</p>

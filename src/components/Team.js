@@ -14,7 +14,8 @@ const Team = () => {
             The collection includes 10,000 uniquely generated Cool Sheep, each
             with a random background, ears, and other attributes. And yes, just
             look how cute they are! We were inspired by a Cool Fam, especially
-            <span className={classes.accent}> Cool Cats</span> and{" "}
+            <span className={classes.accent}> Cool Cats</span>,{" "}
+            <span className={classes.accent}>Cool Dogs </span> and{" "}
             <span className={classes.accent}>Alien frens</span>. In honor of
             this, we give all the holders of Cool Cats and Alien frens a free
             mint.
