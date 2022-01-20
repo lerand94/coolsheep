@@ -26,7 +26,7 @@ const calculateTime = (targetDate) => {
 };
 
 const Timer = () => {
-  const targetDate = new Date("2022-02-15T20:59:59.000Z");
+  const targetDate = new Date("2022-02-17T20:59:59.000Z");
   const [timeLeft, setTimeLeft] = useState(calculateTime(targetDate));
   useEffect(() => {
     setTimeout(() => {
@@ -51,7 +51,7 @@ const Timer = () => {
           <span>Seconds</span>
         </div>
       </div> */}
-        <h3>The presale will be available in</h3>
+        <h3>The public sale will be available in</h3>
         <ul>
           <li>
             <span className={classes.dayNum}>{timeLeft.days}</span>
@@ -71,7 +71,7 @@ const Timer = () => {
           </li>
         </ul>
       </div>
-      <p>Main sale: 17th February</p>
+      <p>Pre-sale: 15th February</p>
       <p>Price: 0.02 ETH</p>
     </>
   );
