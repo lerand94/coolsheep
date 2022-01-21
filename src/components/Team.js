@@ -3,6 +3,7 @@ import Wrapper from "./UI/Wrapper";
 import dev1 from "../assets/dev1.png";
 import dev2 from "../assets/dev2.png";
 import dev3 from "../assets/dev3.png";
+import dev4 from "../assets/dev4.png";
 
 const Team = () => {
   return (
@@ -84,6 +85,24 @@ const Team = () => {
               <div>
                 <span className={classes.name}>Deus Vult</span>
                 <span className={classes.position}>Communications</span>
+              </div>
+            </p>
+          </li>
+          <li className={classes.teamListItem}>
+            <div className={classes.itemBox}>
+              <img src={dev4} />
+            </div>
+            <p>
+              J4dan a man grew up in the age of technology spends every day
+              analyzing projects around NFTs. His urge to understand the markets
+              is not limited to the virtual world. This is also noticeable in
+              real life. He works successfully in the consulting process for one
+              of the largest banks in Europe. Fortunately, his path crossed with
+              us. He is responsible for all consulting and marketing processes
+              in our team.
+              <div>
+                <span className={classes.name}>J4dan</span>
+                <span className={classes.position}>Marketing</span>
               </div>
             </p>
           </li>
