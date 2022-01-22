@@ -18,7 +18,7 @@ const Team = () => {
             <span className={classes.accent}> Cool Cats</span>,{" "}
             <span className={classes.accent}>Cool Dogs </span> and{" "}
             <span className={classes.accent}>Alien frens</span>. In honor of
-            this, we give all the holders of Cool Cats,Cool Dogs and Alien frens a free
+            this, we give all the holders of Cool Cats, Cool Dogs and Alien frens a free
             mint.
           </p>
           <p>
