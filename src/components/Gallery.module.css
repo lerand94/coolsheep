@@ -169,8 +169,9 @@
     height: 200px;
   }
   .wall {
-    padding-top: 180px;
+    padding-top: 300px;
   }
+  .preview {display: none;}
   .preview::before {
     left: -14px;
     top: -14px;

@@ -1,0 +1,98 @@
+.traitsBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+.traitItem {
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 0px 19px 20px rgb(50 46 41 / 5%);
+    flex-direction: column;
+    align-items: center;
+    font-family: "Sponge";
+    padding: 20px;
+}
+.traitItem > p {
+    margin: 0;
+    font-size: 45px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.traitItem > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 30px;
+}
+.traitItem img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.chance {
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+.chance1 {
+    background: #cc8e8e;
+}
+.chance2 {
+    background: #5fd5cf;
+}
+.chance3 {
+    background: #fbc390;
+}
+.chance4 {
+    background: #91a7fa;
+}
+.chance5 {
+    background: #91e6fa;
+}
+.chance6 {
+    background: #cc8ecc;
+}
+.chance7 {
+    background: #e4fa91;
+}
+.chance8 {
+    background: #8034c7;
+}
+.video {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 911px) {
+    .traitsBox {
+        grid-template-columns: 1fr 1fr;
+        padding-top: 50px;
+        grid-gap: 8px;
+    }
+}
+@media (max-width: 576px) {
+    .traitItem {
+        
+        padding: 5px;
+    }
+    .traitItem > p {
+        font-size: 25px;
+    }
+    .traitItem > div {
+        flex-direction: column;
+    }
+    .chance {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .chanceText {
+        display: none;
+    }
+}

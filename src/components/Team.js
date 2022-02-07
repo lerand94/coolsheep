@@ -4,6 +4,7 @@ import dev1 from "../assets/dev1.png";
 import dev2 from "../assets/dev2.png";
 import dev3 from "../assets/dev3.png";
 import dev4 from "../assets/dev4.png";
+import twitter from '../assets/twitter.svg'
 
 const Team = () => {
   return (
@@ -18,8 +19,8 @@ const Team = () => {
             <span className={classes.accent}> Cool Cats</span>,{" "}
             <span className={classes.accent}>Cool Dogs </span> and{" "}
             <span className={classes.accent}>Alien frens</span>. In honor of
-            this, we give all the holders of Cool Cats, Cool Dogs and Alien frens a free
-            mint.
+            this, we give all the holders of Cool Cats, Cool Dogs and Alien
+            frens a free mint.
           </p>
           <p>
             By buying the NTF card of our little cool sheep, each holder
@@ -49,6 +50,9 @@ const Team = () => {
               not prevent her from combining a sharp, strong intellect,
               extraordinary diligence, and prudence.
               <div>
+                <a href="https://twitter.com/OwO_Raven_OwO" target="_blank" className={classes.twitter}>
+                  <img src={twitter} />
+                </a>
                 <span className={classes.name}>Raven</span>
                 <span className={classes.position}>Design Artist</span>
               </div>
@@ -66,6 +70,9 @@ const Team = () => {
               is behind him, and this must be given its due, because there is a
               lot of work here - especially alone.
               <div>
+                <a href="https://twitter.com/Cool_Scofield" target="_blank" className={classes.twitter}>
+                  <img src={twitter} />
+                </a>
                 <span className={classes.name}>Scofield</span>
                 <span className={classes.position}>Developer</span>
               </div>
@@ -83,6 +90,9 @@ const Team = () => {
               this two-meter bearded, endlessly absorbing coffee, polite young
               man, loving history, coffee and old coins.
               <div>
+                <a href="https://twitter.com/DeusVult_CST" target="_blank" className={classes.twitter}>
+                  <img src={twitter} />
+                </a>
                 <span className={classes.name}>Deus Vult</span>
                 <span className={classes.position}>Communications</span>
               </div>
@@ -101,6 +111,9 @@ const Team = () => {
               us. He is responsible for all consulting and marketing processes
               in our team.
               <div>
+                <a href="https://twitter.com/jan4dan" target="_blank" className={classes.twitter}>
+                  <img src={twitter} />
+                </a>
                 <span className={classes.name}>J4dan</span>
                 <span className={classes.position}>Marketing</span>
               </div>

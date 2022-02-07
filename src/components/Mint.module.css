@@ -229,6 +229,9 @@
 }
 
 @media (max-width: 576px) {
+  .mint {
+    padding-bottom: 30px;
+  }
   .mint h1 > span:last-child {
     font-size: 40px;
     margin-top: 20px;
