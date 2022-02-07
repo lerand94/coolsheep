@@ -8,6 +8,7 @@ import Mint from "./components/Mint";
 import Grid from "./components/Grid";
 import Team from "./components/Team";
 import Gallery from "./components/Gallery";
+import Traits from "./components/Traits";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <main>
         <Mint />
         <Gallery />
+        <Traits />
         <Team />
         <Roadmap />
         <ProjectRoadmap />
