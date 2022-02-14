@@ -1,14 +1,31 @@
 import classes from "./Mint.module.css";
 import Wrapper from "./UI/Wrapper";
 
-import { useState } from "react";
+import { useEffect,useState } from "react";
 import Timer from "./Timer";
 import Socials from "./Socials";
 
 import gif from "../assets/gif.gif";
 
+import { useStore } from "effector-react";
+import { $contractSaleActive, $supply, giftFx, mintFx } from "../stores/web3";
+
 const Mint = () => {
   const [mintAmount, setMintAmount] = useState(1);
+
+  const supply = useStore($supply);
+  const isSaleAcitve = useStore($contractSaleActive);
+  const isMintPending = useStore(mintFx.pending);
+  const isGiftPending = useStore(giftFx.pending);
+
+  const mint = () => {
+    mintFx(mintAmount);
+  };
+
+  const gift = () => {
+    giftFx();
+  };
+
   const mintAmountHandler = (event) => {
     setMintAmount(event.target.value);
   };
@@ -25,12 +42,12 @@ const Mint = () => {
             <span className={classes.accent}>Cool Dogs</span> and
             <span className={classes.accent}> Alien frens</span>
           </p>
-          {/* <p className={classes.desc}>Choose a quantity to mint</p>
+          <p className={classes.desc}>Choose a quantity to mint</p>
           <div className={classes.sliderBox}>
             <input
               type="range"
               min="1"
-              max={40}
+              max={5}
               step="1"
               value={mintAmount}
               onChange={mintAmountHandler}
@@ -40,14 +57,14 @@ const Mint = () => {
               className={classes.mintValue}
               style={{
                 left:
-                  mintAmount >= 39
+                  mintAmount >= 5
                     ? "98%"
-                    : `${mintAmount == 1 ? 2 * mintAmount : 2.5 * mintAmount}%`,
+                    : `${mintAmount == 1 ? 2 * mintAmount : 20 * mintAmount}%`,
                 transform:
-                  mintAmount >= 39
+                  mintAmount >= 5
                     ? "translateX(-98%)"
                     : `translateX(-${
-                        mintAmount == 1 ? 2 * mintAmount : 2.5 * mintAmount
+                        mintAmount == 1 ? 2 * mintAmount : 20 * mintAmount
                       }%)`,
               }}
             >
@@ -57,24 +74,24 @@ const Mint = () => {
           <div className={classes.btnGroup}>
             <button
               className={classes.mintButton}
-              // onClick={mint}
-              // disabled={!isSaleAcitve || isMintPending}
+              onClick={mint}
+              disabled={!isSaleAcitve || isMintPending}
             >
               Mint
             </button>
             <div className={classes.text}>
               <span>Minted:</span>
-              <span>0 / 10000</span>
+              <span>{supply.total} / 10000</span>
             </div>
             <button
               className={classes.mintButton}
-              // onClick={claim}
-              // disabled={!isSaleAcitve || isMintPending}
+              onClick={gift}
+              disabled={!isSaleAcitve || isGiftPending}
             >
-              Claim
+              Free mint
             </button>
-          </div> */}
-          <p className={classes.soon}>Coming Soon</p>
+          </div>
+          {/* <p className={classes.soon}>Coming Soon</p> */}
         </div>
         <div className={classes.right}>
           <img className={classes.gif} src={gif} />

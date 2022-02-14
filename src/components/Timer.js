@@ -22,11 +22,11 @@ const calculateTime = (targetDate) => {
     };
   }
 
-  return { soon: "Starting soon" };
+  return { soon: "Mint Alive" };
 };
 
 const Timer = () => {
-  const targetDate = new Date("2022-02-17T20:59:59.000Z");
+  const targetDate = new Date("2022-02-15T20:59:59.000Z");
   const [timeLeft, setTimeLeft] = useState(calculateTime(targetDate));
   useEffect(() => {
     setTimeout(() => {
@@ -51,27 +51,35 @@ const Timer = () => {
           <span>Seconds</span>
         </div>
       </div> */}
-        <h3>The public sale will be available in</h3>
-        <ul>
-          <li>
-            <span className={classes.dayNum}>{timeLeft.days}</span>
-            <span className={classes.dayText}>Days</span>
-          </li>
-          <li>
-            <span className={classes.dayNum}>{timeLeft.hours}</span>
-            <span className={classes.dayText}>Hours</span>
-          </li>
-          <li>
-            <span className={classes.dayNum}>{timeLeft.minutes}</span>
-            <span className={classes.dayText}>Mins</span>
-          </li>
-          <li>
-            <span className={classes.dayNum}>{timeLeft.seconds}</span>
-            <span className={classes.dayText}>Secs</span>
-          </li>
-        </ul>
+        <>
+          <h3 className={timeLeft.soon !== undefined ? classes.alive : null}>
+            {timeLeft.soon !== undefined
+              ? timeLeft.soon
+              : "The pre-sale will be available in"}
+          </h3>
+          {timeLeft.soon === undefined && (
+            <ul>
+              <li>
+                <span className={classes.dayNum}>{timeLeft.days}</span>
+                <span className={classes.dayText}>Days</span>
+              </li>
+              <li>
+                <span className={classes.dayNum}>{timeLeft.hours}</span>
+                <span className={classes.dayText}>Hours</span>
+              </li>
+              <li>
+                <span className={classes.dayNum}>{timeLeft.minutes}</span>
+                <span className={classes.dayText}>Mins</span>
+              </li>
+              <li>
+                <span className={classes.dayNum}>{timeLeft.seconds}</span>
+                <span className={classes.dayText}>Secs</span>
+              </li>
+            </ul>
+          )}
+        </>
       </div>
-      <p>Pre-sale: 15th February</p>
+      <p>Public-sale: 17th February</p>
       <p>Price: 0.02 ETH</p>
     </>
   );
