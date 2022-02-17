@@ -84,7 +84,7 @@
   opacity: 0.25;
 }
 .sliderBox::after {
-  content: "5";
+  content: "20";
   position: absolute;
   font-family: "Montserrat";
   font-style: normal;

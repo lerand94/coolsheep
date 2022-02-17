@@ -47,7 +47,7 @@ const Mint = () => {
             <input
               type="range"
               min="1"
-              max={5}
+              max={20}
               step="1"
               value={mintAmount}
               onChange={mintAmountHandler}
@@ -57,14 +57,14 @@ const Mint = () => {
               className={classes.mintValue}
               style={{
                 left:
-                  mintAmount >= 5
+                  mintAmount >= 20
                     ? "98%"
-                    : `${mintAmount == 1 ? 2 * mintAmount : 20 * mintAmount}%`,
+                    : `${mintAmount == 1 ? 2 * mintAmount : 5 * mintAmount}%`,
                 transform:
-                  mintAmount >= 5
+                  mintAmount >= 20
                     ? "translateX(-98%)"
                     : `translateX(-${
-                        mintAmount == 1 ? 2 * mintAmount : 20 * mintAmount
+                        mintAmount == 1 ? 2 * mintAmount : 5 * mintAmount
                       }%)`,
               }}
             >
